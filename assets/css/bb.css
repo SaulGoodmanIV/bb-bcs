@@ -1,0 +1,217 @@
+body {
+	background: 
+	linear-gradient(rgba(0,0, 0, 0.5), rgba(0,0,0,1)),
+	
+	url(../backgrounds/toh_background.jpg);
+	-moz-background-size:cover;
+	-webkit-background-size:cover;
+}
+
+* {
+	-moz-user-select: -moz-none;
+   -khtml-user-select: none;
+   -webkit-user-select: none;
+    user-drag: none;
+    -webkit-user-drag: none;
+}
+
+#back {
+	font-family: sans-serif;
+	font-style: arial;
+	font-size: 30px;
+	font-weight: bold;
+	color: white;
+	background-color: #0f1d40;
+	border: 0px;
+	width: 50px;
+	height: 50px;
+	border-radius: 6px;
+	margin: 5px;
+	transition: 0.2s transform;
+	
+}
+
+#back:hover{
+	transform: scale(1.2);
+	background-color: #313b57;
+}
+
+#logo {
+	padding-left: 20px;
+}
+
+
+.space { 
+margin-top: 10.68%; 
+}
+
+.episodeNav {
+	width: 204.96px;
+	background-color: #665FBF;
+	border: 0px;
+	font-family: sans-serif;
+	font-style: arial;
+	color: black;
+	font-size: 15px;
+	padding: 15px;
+	border-radius: 5px;
+	margin: 10px;
+	font-weight: bold;
+	transition: transform .3s;
+}
+
+.episodeNav:hover {
+	transform: scale(1.2);
+	background-color: #534e9c;
+}
+
+iframe {
+	border:none;
+	height: 580;
+	width: 1024;
+	allow: fullscreen;
+}
+
+h2 {
+	-webkit-text-stroke: 1.5px black;
+	font-family: sans-serif;
+	font-style: arial;
+	font-size: 30px;
+	display: block;
+	padding-left: 10px;
+	color: #665FBF;
+	padding-left: 3px;
+	padding-right: 3px;	
+}
+
+.s1, .s2, .s3 {
+	width: 100%;
+	height: 100%;
+	background-color: transparent;
+	border-radius: 7px;
+	transition: transform .2s;
+	text-decoration: none;
+	box-sizing: border-box;
+	padding-left: 10px;
+	padding-right: 10px;
+	white-space: normal;
+}
+
+.s1:hover, .s2:hover, .s3:hover {
+	transform: scale(1.1)
+}
+
+.thumbnail {
+	width: auto;
+	width: 250px;
+	height: 140.63px;
+	border-radius: 7px;
+	margin: 0px;
+	padding: 0px;
+	display: block;
+	float: top;
+}
+
+p {
+	font-family: sans-serif;
+	font-style: arial;
+	display:block;
+	padding-left: 10px;
+	color: white;
+	padding-left: 3px;
+	padding-right: 3px;
+}
+
+a {
+	text-decoration: none;
+}
+
+div.bar {
+	background: #000;
+	display: block;
+	padding-top: 20px;
+	padding-left: 20px;
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
+}
+
+div.episodes {
+  background-color: #000;
+  overflow: auto;
+  white-space: nowrap;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;	
+  display: flex;
+  bottom: 0px;
+}
+
+div.episodes, div.bar {
+	background:
+	linear-gradient(#313b57, #091229);
+	background-attachment: fixed;
+} 	
+
+.comingsoon {
+	position: relative;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  opacity: 1;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.overlay {
+	position: absolute;
+	width: 250px;
+	height: 140.63px;
+	border-radius: 7px;
+	top: 0;
+	opacity: 0;
+	transition: 0.5s ease;
+	background: rgb(0, 0, 0);
+	background: rgba(0, 0, 0, 0.7);
+	
+}
+
+.comingsoon:hover .overlay {
+	opacity: 1;
+}
+
+.season {
+	background-color: transparent;
+	color: white;
+	font-family: sans-serif;
+	font-style: arial;
+	padding: 16px;
+	font-size: 16px;
+	border: 0px;
+	border-radius: 5px;
+	transition: .3s transform;
+}
+
+.season:hover {
+	transform: scale(1.2);
+}
+
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px black;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: gray;
+  border-radius: 10px;
+}
